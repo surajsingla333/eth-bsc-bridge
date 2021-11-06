@@ -51,4 +51,4 @@ Follow the below steps to initialize the project and swap test tokens between 2 
 
 2. When tokens are transferred from BSC to ethereum chain, the tokens are burnt on BSC chain but only the tokens which are locked inside the bridge contract on Ethereum are released and sent to the appropriate user hence preventing further minting of the tokens.
 
-3. The locked token on the ethereum bridge contract can only be accessed by and tranferred the admin of the contract (who deploys the contract)[though this function will make the network instable and should not be used]. 
+3. The locked token on the ethereum bridge contract can only be accessed by and tranferred the admin of the contract (who deploys the contract) [though this function will make the network instable and should not be used]. 
