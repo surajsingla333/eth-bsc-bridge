@@ -4,7 +4,10 @@ This project is a bridge between Ethereum and Binance smart chain to transfer to
 
 ## Instructions
 
-Follow the below steps to initialize the project and swap test tokens between 2 chains.
+Before you start, this is a node project and you will be required to have node and npm installed on you system.<br>
+After installing npm, run the command `npm i -g truffle` to install truffle suite globally on you system. 
+
+Once the above requirements are fulfilled, follow the below steps to initialize the project and swap test tokens between 2 chains.
 
 1.  Clone the repository and install the required dependencies using `npm i`
 
@@ -52,3 +55,5 @@ Follow the below steps to initialize the project and swap test tokens between 2 
 2. When tokens are transferred from BSC to ethereum chain, the tokens are burnt on BSC chain but only the tokens which are locked inside the bridge contract on Ethereum are released and sent to the appropriate user hence preventing further minting of the tokens.
 
 3. The locked token on the ethereum bridge contract can only be accessed by and tranferred the admin of the contract (who deploys the contract) [though this function will make the network instable and should not be used]. 
+
+***Note**: The build details are also available in the repo so to try out the transfer functionality, you can skip the first 4 steps and directly start from step 5.*
