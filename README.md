@@ -11,7 +11,7 @@ Follow the below steps to initialize the project and swap test tokens between 2 
 2.  We will be required to create ethereum and bsc addresses which will be used to hold and transfer the tokens.
     To create the accounts, run the following command:
 
-    > Ethereum: `node .\scripts\generate-addresses.js ETH <password_to_encrypt_key>`
+    > Ethereum: `node .\scripts\generate-addresses.js ETH <password_to_encrypt_key>`<br>
     > BSC: `node .\scripts\generate-addresses.js BSC <password_to_encrypt_key>`
 
     These commands will store the account details in the json format with the filename as `eth_account.json` and `bsc_account.json` respectively.
@@ -22,7 +22,7 @@ Follow the below steps to initialize the project and swap test tokens between 2 
 
 4. We will deploy the smart contracts on ethereum and bsc using the following command
 
-   > Ethereum: `truffle migrate --reset --network ethTestnet`
+   > Ethereum: `truffle migrate --reset --network ethTestnet`<br>
    > BSC: `truffle migrate --reset --network bscTestnet`
 
    These scripts will deploy the token and bridge contracts on the respective networks and will mint 10000 tokens on Ethereum in the above created account.
@@ -42,7 +42,7 @@ Follow the below steps to initialize the project and swap test tokens between 2 
    > `truffle exec .\scripts\bsc-eth-transfer.js --network bscTestnet`
 
 8. To check token balance for the account on respective networks and total token supply, use the following commands
-   > Ethereum: `truffle exec .\scripts\eth-token-balance.js --network ethTestnet`
+   > Ethereum: `truffle exec .\scripts\eth-token-balance.js --network ethTestnet`<br>
    > BSC: `truffle exec .\scripts\bsc-token-balance.js --network bscTestnet`
 
 ## Notes
